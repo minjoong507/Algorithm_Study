@@ -1,60 +1,12 @@
-Tobigs = list(map(int, input().split()))
-A = list(map(int, input().split()))
-B = list(map(int, input().split()))
+left1, bottom1, right1, top1 = map(int, input().split())
+left2, bottom2, right2, top2 = map(int, input().split())
+left3, bottom3, right3, top3 = map(int, input().split())
 
-extra_conflict_list = []
-
-
-def compute_area(a):
-    x1 = a[:2]
-    x2 = a[2:]
-    return (x2[0] - x1[0]) * (x2[1] - x1[1])
-
-
-def double_conflict_area(a, b):
-    conflict_list = []
-    x1 = a[:2]
-    x2 = a[2:]
-    x3 = b[:2]
-    x4 = b[2:]
-
-    if x1[0] <= x3[0] < x2[0] and x1[1] <= x3[1] < x2[1]:
-        if x3[0] <= x4[0] < x2[0] and x3[1] <= x4[1] < x2[1]:
-            return conflict_area(Tobigs, b)
-        else:
-            conflict_list = x3 + x2
-            return conflict_area(Tobigs, conflict_list)
-
-    elif x1[0] <= x4[0] < x2[0] and x1[1] <= x4[1] < x2[1]:
-        conflict_list = x1 + x4
-        return conflict_area(Tobigs, conflict_list)
-    else:
-        return 0
-
-def conflict_area(a, b):
-    conflict_list = []
-    x1 = a[:2]
-    x2 = a[2:]
-    x3 = b[:2]
-    x4 = b[2:]
-
-    if x1[0] <= x3[0] < x2[0] and x1[1] <= x3[1] < x2[1]:
-        if x3[0] <= x4[0] < x2[0] and x3[1] <= x4[1] < x2[1]:
-            return compute_area(b)
-        else:
-            conflict_list = x3 + x2
-            return compute_area(conflict_list)
-
-    elif x1[0] <= x4[0] < x2[0] and x1[1] <= x4[1] < x2[1]:
-        conflict_list = x1 + x4
-        return compute_area(conflict_list)
-    else:
-        return 0
-
-
-print(compute_area(Tobigs) - conflict_area(Tobigs, A) - conflict_area(Tobigs, B) + double_conflict_area(A, B))
-
-print(compute_area(Tobigs))
-print(conflict_area(Tobigs,A))
-print(conflict_area(Tobigs,B))
-print(double_conflict_area(A,B))
+if left1 > right1 or left2 > right2 or left3 > right3 or bottom1 > top1 or bottom2 > top2 or bottom3 > top3:
+    print(0)
+else:
+    ret = (right1 - left1) * (top1 - bottom1)
+    ret -= max((min(right1, right2) - max(left1, left2)), 0) * max((min(top1, top2) - max(bottom1, bottom2)), 0)
+    ret -= max((min(right1, right3) - max(left1, left3)), 0) * max((min(top1, top3) - max(bottom1, bottom3)), 0)
+    ret += max((min(right1, min(right2, right3)) - max(left1, max(left2, left3))), 0) * max((min(top1, min(top2, top3)) - max(bottom1, max(bottom2, bottom3))), 0)
+    print(ret)
