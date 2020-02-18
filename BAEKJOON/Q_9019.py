@@ -15,7 +15,7 @@ def solve(Start, End):
                 q.append(node*2)
                 result[node*2] = result[node] + 'D'
 
-            elif node * 2 >= MAX and result[divmod(node*2, MAX)[1]] == "":
+            elif node * 2 >= MAX and result[(node*2) % MAX] == "":
                 new_node = divmod(node*2, MAX)[1]
                 q.append(new_node)
                 result[new_node] = result[node] + 'D'
@@ -28,13 +28,8 @@ def solve(Start, End):
                 q.append(9999)
                 result[9999] = result[node] + 'S'
 
-            d1 = divmod(node, 1000)[0]
-            d2 = divmod(node - (d1*1000), 100)[0]
-            d3 = divmod(node - (d1*1000) - (d2 * 100), 10)[0]
-            d4 = divmod(node, 10)[1]
-
-            L_num = d2*1000 + d3*100 + d4*10 + d1
-            R_num = d4*1000 + d1*100 + d2*10 + d3
+            L_num = divmod(node, 1000)[1] * 10 + divmod(node, 1000)[0]
+            R_num = divmod(node, 10)[0] + divmod(node, 10)[1] * 1000
 
             if result[L_num] == "":
                 q.append(L_num)
