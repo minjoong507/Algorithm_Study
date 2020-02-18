@@ -1,45 +1,32 @@
-from _collections import deque
-MAX = 10000
+from collections import deque
 
-def solve(Start, End):
-    result = [""] * MAX
+N, M, C = 10000, 1000, "DSLR"
+path = [0]*N
+command = [0]*N
+
+def bfs():
+    check = [False] * N
     q = deque()
-    q.append(Start)
+    q.append(A)
     while q:
-        node = q.popleft()
-
-        if node == End:
-            return result[node]
-        else:
-            if 0 <= node * 2 < MAX and result[node*2] == "":
-                q.append(node*2)
-                result[node*2] = result[node] + 'D'
-
-            elif node * 2 >= MAX and result[(node*2) % MAX] == "":
-                new_node = divmod(node*2, MAX)[1]
-                q.append(new_node)
-                result[new_node] = result[node] + 'D'
-
-            if 0 <= node - 1 < MAX and result[node-1] == "":
-                q.append(node-1)
-                result[node-1] = result[node] + 'S'
-
-            elif node == 0 and result[9999] == "":
-                q.append(9999)
-                result[9999] = result[node] + 'S'
-
-            L_num = divmod(node, 1000)[1] * 10 + divmod(node, 1000)[0]
-            R_num = divmod(node, 10)[0] + divmod(node, 10)[1] * 1000
-
-            if result[L_num] == "":
-                q.append(L_num)
-                result[L_num] = result[node] + 'L'
-
-            if result[R_num] == "":
-                q.append(R_num)
-                result[R_num] = result[node] + 'R'
-
+        x = q.popleft()
+        if x == B:
+            v = []
+            while x != A:
+                v.append(command[x])
+                x = path[x]
+            print(''.join(map(str, v[::-1])))
+            return
+        nx = (x*2%N, x-1 if x else N-1, x%M*10+x//M, x//10+x%10*M)
+        for i in range(4):
+            if not check[nx[i]]:
+                check[nx[i]] = True
+                path[nx[i]] = x
+                command[nx[i]] = C[i]
+                q.append(nx[i])
 
 for i in range(int(input())):
-    Start, End = map(int, input().split())
-    print(solve(Start, End))
+    A, B = map(int, input().split())
+    bfs()
+
+
