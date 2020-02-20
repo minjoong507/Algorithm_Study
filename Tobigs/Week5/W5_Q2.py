@@ -1,35 +1,43 @@
-# A = input()
+def solve(A):
+    if len(A) % 2 == 0:
+        front = list(A[:len(A) // 2])
+        back = list(A[len(A) // 2:][::-1])
+        for i in range(len(front)):
+            if front[i] == '?' and back[i] == '?':
+                front[i] = 'a'
+                back[i] = 'a'
+            elif front[i] == '?' and back[i] != '?':
+                front[i] = back[i]
+            elif front[i] != '?' and back[i] == '?':
+                back[i] = front[i]
+            elif front[i] == back[i]:
+                pass
+            else:
+                print("NO")
+                return
+        print(''.join(front + back[::-1]))
+        return
+    else:
+        front = list(A[:len(A) // 2])
+        back = list(A[len(A) // 2 + 1:][::-1])
+        middle = A[len(A)//2]
+        if middle == '?':
+            middle = 'a'
 
-# def solve(A):
-#     word = list(A)
-#     for i in range(len(word)//2 + 1):
-#         print(i)
-#         if word[i] == "?":
-#             if word[-i] != "?":
-#                 word[i] = word[-i]
-#             else:
-#                 word[i] = 'a'
-#                 word[-i] = 'a'
-#         else:
-#             if word[-i] == "?":
-#                 word[-i] = word[i]
-#                 print("change")
-#             elif word[i] == word[-i]:
-#                 pass
-#             else:
-#                 print("NO")
-#                 return
-#     print(''.join(word))
-#     return
+        for i in range(len(front)):
+            if front[i] == '?' and back[i] == '?':
+                front[i] = 'a'
+                back[i] = 'a'
+            elif front[i] == '?' and back[i] != '?':
+                front[i] = back[i]
+            elif front[i] != '?' and back[i] == '?':
+                back[i] = front[i]
+            elif front[i] == back[i]:
+                pass
+            else:
+                print("NO")
+                return
+        print(''.join(front + list(middle) + back[::-1]))
+        return
 
-
-# solve(A)
-a = 'bfsd'
-
-print(a[:len(a)//2])
-print(a[len(a)//2:][::-1])
-
-a = 'bfasd'
-
-print(a[:len(a)//2])
-print(a[len(a)//2+1:][::-1])
+solve(input())
