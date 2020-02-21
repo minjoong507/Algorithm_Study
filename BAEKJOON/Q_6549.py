@@ -6,4 +6,3 @@ while True:
         break
     tower = data[1:]
     for i, height in enumerate(tower):
-        
