@@ -1,27 +1,27 @@
 import sys
+from _collections import deque
 
-input = sys.stdin.readline
-command_count = int(input())
 stack = []
-def solve(command_input):
-    print(stack)
-    if len(stack) > int(command_input):
-        while len(stack) > int(command_input):
-            print('-')
-            stack.pop()
+result = []
+State = 0
+count = 1
 
-    elif len(stack) < int(command_input):
-        while len(stack) < int(command_input):
-            print('+')
-            stack.append(0)
-        print('-')
+for i in range(int(input())):
+    command_input = int(input())
+    while count <= command_input:
+        stack.append(count)
+        count += 1
+        result.append('+')
+    if stack[-1] == command_input:
         stack.pop()
+        result.append('-')
     else:
-        print('-')
-        stack.pop()
+        State = 1
+        break
 
+if State == 1:
+    print('NO')
+else:
+    for k in result:
+        print(k)
 
-
-
-for i in range(command_count):
-    solve(input())
