@@ -1,38 +1,54 @@
 A = list(input())
 
 def solve(code):
-    if len(code) == 1 and code[0] == 'a' or code[0] == 'b':
-        return True
+    stack = []
+    for i in code:
+        if i != ')':
+            stack.append(i)
+        else:
+            is_two = False
+            while True:
+                matched = False
+                if len(stack) == 0:
+                    print('Syntax Error')
+                    exit(0)
 
-    elif code[0] == 'o' and code[1] == 'n' and code[2] == 'e' and code[3] == '(' and code[-1] == ')':
-        return solve(code[4:len(code)-1])
+                else:
+                    node = stack.pop()
 
-    elif code[0] == 't' and code[1] == 'w' and code[2] == 'o' and code[3] == '(' and code[-1] == ')':
-        for i in range(4, len(code)-1):
-            if code[i] == ',':
-                return solve(code[4:i]), solve(code[i+1:len(A)-1])
-            else:
-                continue
-        return False
-    else:
-        return False
+                    if node == 'a':
+                        pass
+                    elif node == 'b':
+                        pass
+                    elif node == 'o':
+                        pass
+                    elif node == 'n':
+                        pass
+                    elif node == 'e':
+                        pass
+                    elif node == 't':
+                        pass
+                    elif node == 'w':
+                        pass
+                    elif node == '(':
+                        if is_two and stack[-1] == 'o':
+                            matched = True
+                            break
+                        elif not is_two and stack[-1] == 'e':
+                            matched = True
+                            break
+                        else:
+                            matched = False
+                            break
+                    elif node == ',':
+                        is_two = True
+                    else:
+                        print('Syntax Error')
+                        exit(0)
+            if not matched:
+                print('Syntax Error')
+                exit(0)
+    print('No Error')
 
-if solve(A):
-    print("Syntax Error")
-else:
-    print("No Error")
-
-
-# A = 'two(two(b,one(two(two(two(a,b),a),two(two(one(a),a),one(one(b)))),a)'
-# stack = []
-#
-# def check(word):
-#     for i in word:
-#         print(i)
-#         if i == 't' or i == 'w' or i == 'o' or i == 'n' or i == 'e' or i == 'a' or i == 'b' or i == '(' or i == ')' or i == ',':
-#             stack.append(i)
-#         else:
-#             return False
-# check(list(A))
-# print(stack)
+solve(A)
 
