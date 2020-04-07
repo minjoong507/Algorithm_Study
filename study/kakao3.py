@@ -36,4 +36,3 @@ def dfs(ans, step):
             answer += 1
 
     if step<len(result):
-        
