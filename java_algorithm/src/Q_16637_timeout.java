@@ -6,61 +6,41 @@ public class Q_16637_timeout {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static long result = Long.MIN_VALUE;
     static int N;
-    static String[] prob;
+    static char[] token;
+    static ArrayList<String> res = new ArrayList<>();
 
-
-    public static void main(String args[]) throws Exception{
+    public static void main(String[] args) throws Exception{
         N = Integer.parseInt(br.readLine());
-        prob = br.readLine().split("");
-
-        solve(prob);
-        System.out.println(result);
+        token = br.readLine().toCharArray();
+        System.out.println(solve(0, token[0]-'0'));
     }
-
-    public static void solve(String[] ary){
-        if(ary.length == 1){
-            result = Math.max(Integer.parseInt(ary[0]), result);
-            return;
+    public static int solve(int idx, int cur){
+        if(idx >= N-1){
+            return cur;
         }
+        // 괄호 연산 후 dfs
+        int ret = solve(idx+2, calculate(cur, token[idx+2]-'0', token[idx+1]));
 
-        for(int i = 0; i< ary.length-1; i+=2)
-            solve(Caculatearray(ary, i));
-    }
-
-
-    public static String[] Caculatearray(String[] ary, int point){
-        ArrayList<String> arr = new ArrayList<>();
-        String[] tmp = new String[ary.length-2];
-
-        for(int i = 0; i<ary.length; i++){
-            if(i == point) {
-                int a = Integer.parseInt(ary[i]);
-                String op = ary[i+1];
-                int b = Integer.parseInt(ary[i+2]);
-
-                switch (op){
-                    case "+":
-                        arr.add(String.valueOf(a+b));
-                        break;
-                    case "-":
-                        arr.add(String.valueOf(a-b));
-                        break;
-                    case "*":
-                        arr.add(String.valueOf(a*b));
-                        break;
-                }
-                i = i + 2;
-            }
-            else
-                arr.add(ary[i]);
+        // 괄호 연산 안하고 dfs
+        if(idx+4 <= N-1){
+            int val = calculate(cur,
+                    calculate(token[idx+2]-'0', token[idx+4]-'0', token[idx+3]),
+                    token[idx+1]);
+            ret = Math.max(ret, solve(idx+4, val));
         }
-
-        int size = 0;
-        for(String str: arr)
-            tmp[size++] = str;
-
-        return tmp;
+        return ret;
     }
 
 
+    public static int calculate(int a, int b, char opr){
+        switch (opr){
+            case '+':
+                return a+b;
+            case '-':
+                return a-b;
+            case '*':
+                return a*b;
+        }
+        return 0;
+    }
 }
