@@ -36,14 +36,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Application.Q_17070">
-    <configuration name="Q_15649" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Q_15649" />
-      <module name="intellij" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Q_17136">
     <configuration name="Q_16637" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Q_16637" />
       <module name="intellij" />
@@ -65,6 +58,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Q_17136" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Q_17136" />
+      <module name="intellij" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="practice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="practice" />
       <module name="intellij" />
@@ -74,11 +74,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Q_17136" />
         <item itemvalue="Application.Q_17070" />
         <item itemvalue="Application.practice" />
         <item itemvalue="Application.Q_16637_timeout" />
         <item itemvalue="Application.Q_16637" />
-        <item itemvalue="Application.Q_15649" />
       </list>
     </recent_temporary>
   </component>
@@ -101,7 +101,7 @@
       <workItem from="1586845932522" duration="140000" />
       <workItem from="1586875804758" duration="819000" />
       <workItem from="1586790732214" duration="15000" />
-      <workItem from="1586878857777" duration="3176000" />
+      <workItem from="1586878857777" duration="6748000" />
     </task>
     <servers />
   </component>
@@ -113,22 +113,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586846071026" />
-    <state width="1493" height="159" key="GridCell.Tab.0.bottom" timestamp="1586882106538">
+    <state width="726" height="158" key="GridCell.Tab.0.bottom" timestamp="1586885878413">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="159" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586882106538" />
-    <state width="1493" height="159" key="GridCell.Tab.0.center" timestamp="1586882106538">
+    <state width="726" height="158" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586885878413" />
+    <state width="726" height="158" key="GridCell.Tab.0.center" timestamp="1586885878413">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="159" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586882106538" />
-    <state width="1493" height="159" key="GridCell.Tab.0.left" timestamp="1586882106538">
+    <state width="726" height="158" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586885878413" />
+    <state width="726" height="158" key="GridCell.Tab.0.left" timestamp="1586885878413">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="159" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586882106538" />
-    <state width="1493" height="159" key="GridCell.Tab.0.right" timestamp="1586882106538">
+    <state width="726" height="158" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586885878413" />
+    <state width="726" height="158" key="GridCell.Tab.0.right" timestamp="1586885878413">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="159" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586882106538" />
+    <state width="726" height="158" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586885878413" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1585924294567">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
