@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eedf5378-61b7-4cc5-b4f4-175d9f9b2bd5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Q_17070.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Q_17070.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,16 +36,37 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Application.Q_1525">
-    <configuration name="Q_1002" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Q_1002" />
+  <component name="RunManager" selected="Application.Q_2884">
+    <configuration name="Q_14681" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Q_14681" />
       <module name="intellij" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Q_1525" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Q_1525" />
+    <configuration name="Q_14890" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Q_14890" />
+      <module name="intellij" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Q_17136" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Q_17136" />
+      <module name="intellij" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Q_17281" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Q_17281" />
+      <module name="intellij" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Q_2884" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Q_2884" />
       <module name="intellij" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -53,8 +74,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Q_1525" />
-        <item itemvalue="Application.Q_1002" />
+        <item itemvalue="Application.Q_2884" />
+        <item itemvalue="Application.Q_14681" />
+        <item itemvalue="Application.Q_14890" />
+        <item itemvalue="Application.Q_17281" />
+        <item itemvalue="Application.Q_17136" />
       </list>
     </recent_temporary>
   </component>
@@ -71,6 +95,15 @@
       <workItem from="1585924281826" duration="458000" />
       <workItem from="1585924810770" duration="632000" />
       <workItem from="1585928537397" duration="2519000" />
+      <workItem from="1586236354754" duration="6376000" />
+      <workItem from="1586441588753" duration="7188000" />
+      <workItem from="1586623536746" duration="600000" />
+      <workItem from="1586845932522" duration="140000" />
+      <workItem from="1586875804758" duration="819000" />
+      <workItem from="1586790732214" duration="15000" />
+      <workItem from="1586878857777" duration="7080000" />
+      <workItem from="1586921491764" duration="9250000" />
+      <workItem from="1587032847366" duration="357000" />
     </task>
     <servers />
   </component>
@@ -78,22 +111,26 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="196" key="GridCell.Tab.0.bottom" timestamp="1585931187610">
+    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1586846071026">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="196" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585931187610" />
-    <state width="1493" height="196" key="GridCell.Tab.0.center" timestamp="1585931187610">
+    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586846071026" />
+    <state width="724" height="192" key="GridCell.Tab.0.bottom" timestamp="1587033271562">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="196" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585931187610" />
-    <state width="1493" height="196" key="GridCell.Tab.0.left" timestamp="1585931187610">
+    <state width="724" height="192" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587033271562" />
+    <state width="724" height="192" key="GridCell.Tab.0.center" timestamp="1587033271562">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="196" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585931187610" />
-    <state width="1493" height="196" key="GridCell.Tab.0.right" timestamp="1585931187610">
+    <state width="724" height="192" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587033271562" />
+    <state width="724" height="192" key="GridCell.Tab.0.left" timestamp="1587033271562">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="196" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585931187610" />
+    <state width="724" height="192" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587033271562" />
+    <state width="724" height="192" key="GridCell.Tab.0.right" timestamp="1587033271562">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="724" height="192" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587033271562" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1585924294567">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -102,6 +139,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="823" y="8" width="657" height="807" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1585929404368" />
+    <state x="180" y="22" key="new project wizard" timestamp="1586846072851">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="180" y="22" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1586846072851" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
