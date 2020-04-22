@@ -10,6 +10,7 @@ public class Q_15988 {
     public static void main(String args[]) {
         N = sc.nextInt();
         test_case = new int[N];
+        
         for (int i = 0; i < N; i++)
             test_case[i] = sc.nextInt();
 
@@ -17,7 +18,6 @@ public class Q_15988 {
 
         for (int i : test_case)
             System.out.println(dp[i]);
-
     }
 
     public static void solve() {
