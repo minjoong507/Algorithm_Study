@@ -10,7 +10,7 @@ public class Q_11437 {
     static StringBuilder sb = new StringBuilder();
     public static void main(String args[]) throws Exception{
         N = Integer.parseInt(br.readLine());
-
+        
         parent = new int[N+1];
         depth = new int[N+1];
         parent[1] = 1;
