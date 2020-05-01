@@ -1,4 +1,5 @@
 import java.io.*;
+import java.util.ArrayList;
 import java.util.StringTokenizer;
 
 public class Q_11437 {
@@ -6,30 +7,29 @@ public class Q_11437 {
     static int N, M;
     static int[] parent, depth, cond1, cond2;
     static int a,b;
+    static ArrayList<ArrayList<Integer>> tree = new ArrayList<ArrayList<Integer>>();
     static StringTokenizer st;
     static StringBuilder sb = new StringBuilder();
+
     public static void main(String args[]) throws Exception{
         N = Integer.parseInt(br.readLine());
-        
-        parent = new int[N+1];
-        depth = new int[N+1];
-        parent[1] = 1;
-        depth[1] = 1;
+        for (int i=0; i<N+1; i++){
+            tree.add(new ArrayList<Integer>());
+        }
 
-        for(int i = 2; i<parent.length; i++){
+        for(int i = 0; i<N-1; i++){
             st = new StringTokenizer(br.readLine().trim());
             a = Integer.parseInt(st.nextToken());
             b = Integer.parseInt(st.nextToken());
 
-            if(depth[a] != 0 && parent[a] != 0){
-                parent[b] = a;
-                depth[b] = depth[a] + 1;
-            }
-            else{
-                parent[a] = b;
-                depth[a] = depth[b] + 1;
-            }
+            tree.get(a).add(b);
+            tree.get(b).add(a);
         }
+
+        depth = new int[N+1];
+        parent = new int[N+1];
+        dfs(1,1);
+
 
         M = Integer.parseInt(br.readLine());
         cond1 = new int[M+1];
@@ -60,5 +60,13 @@ public class Q_11437 {
         }
         System.out.println(sb);
     }
-
+    static void dfs(int from, int cnt) {
+        depth[from] = cnt++;
+        for(Integer next: tree.get(from)) {
+            if(depth[next] == 0) {
+                dfs(next, cnt);
+                parent[next] = from;
+            }
+        }
+    }
 }
