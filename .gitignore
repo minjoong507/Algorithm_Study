@@ -1,3 +1,5 @@
 venv/
-java_algorithm/.idea/
+java_algorithm/.idea/*
 *.xml
+
+java_algorithm/.idea/
