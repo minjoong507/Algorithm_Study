@@ -22,7 +22,7 @@ public class Q_14503 {
         int r = Integer.parseInt(st.nextToken());
         int c = Integer.parseInt(st.nextToken());
         dir = Integer.parseInt(st.nextToken());
-        System.out.println(dir);
+
         for(int i = 0; i < N; i++){
             st = new StringTokenizer(br.readLine().trim());
             for(int j = 0; j< M; j++){
@@ -31,7 +31,7 @@ public class Q_14503 {
         }
 
         int cnt = 0;
-        solve(r,c, 0);
+        solve(c,r, 0);
 
         for(int i = 0; i< MAP.length; i++){
             for(int j =0 ; j< MAP[i].length; j++){
