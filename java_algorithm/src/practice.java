@@ -2,10 +2,15 @@ import java.util.ArrayList;
 
 public class practice {
     public static void main(String args[]){
-        ArrayList<Integer> a = new ArrayList<>();
-        a.add(1);
+        int num = 2089;
+        for(int i = 1; i< 100; i++){
+            if(num % i == 0)
+                System.out.println(i);
+        }
+        System.out.println();
+    }
 
-        for(int k: a)
-            System.out.println(k);
+    public static int f(int i){
+        return 1 + (58 * i);
     }
 }
