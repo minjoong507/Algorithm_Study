@@ -1,132 +1,97 @@
 import java.io.*;
 import java.util.*;
 
-class Q_17141 {
-    static int N, M;
-    static int[][] arr, time_map;
-    static boolean[][] trace;
-    static ArrayList<Integer> virus = new ArrayList<>();
-    static boolean[] visited;
-    static ArrayList<Integer> selected_virus;
-    static int[] dx = {-1, 0, 0, 1};
-    static int[] dy = {0, 1, -1, 0};
-    static int result = Integer.MAX_VALUE;
+class Pos {
+    int r, c;
+    Pos(int r, int c) {
+        this.r = r;
+        this.c = c;
+    }
+}
 
-    public static void main(String[] args) throws Exception {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
+public class Q_17141 {
+    static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    static StringTokenizer st;
+    static int[] dr = { 1, -1, 0, 0 };
+    static int[] dc = { 0, 0, 1, -1 };
+
+    static int N, M;
+    static int[][] map, tmap;
+    static boolean[] selected;
+    static List<Pos> virus = new ArrayList<>();
+    static Deque<Pos> q = new ArrayDeque<>();
+    static int minTime = Integer.MAX_VALUE;
+
+    public static void main(String[] args) throws IOException {
+        st = new StringTokenizer(br.readLine().trim());
         N = Integer.parseInt(st.nextToken());
         M = Integer.parseInt(st.nextToken());
-        // ∏ ≈©±‚ º±æ
-        arr = new int[51][51];
-        time_map = new int[51][51];
+        // ÎßµÌÅ¨Í∏∞ ÏÑ†Ïñ∏
+        map = new int[N][N];
 
-        // ∏  º≥¡§
-        for (int i = 1; i < N+1; i++) {
-            st = new StringTokenizer(br.readLine());
-            for (int j = 1; j < N+1; j++) {
-                arr[i][j] = Integer.parseInt(st.nextToken());
-
-                // ∫Æ¿∫ -1∑Œ ¿˙¿Â
-                if(arr[i][j] == 1)
-                    time_map[i][j] = -1;
-
-
-                // πŸ¿Ã∑ØΩ∫ ¿ßƒ° ¿˙¿Â
-                if (arr[i][j] == 2)
-                    virus.add(i * 10 + j);
-
-            }
-        }
-        // πŸ¿Ã∑ØΩ∫ º±≈√«ÿº≠ µπ∏Æ¿⁄
-        for(int i = 0; i<virus.size(); i++){
-            visited = new boolean[virus.size()];
-            selected_virus = new ArrayList<>();
-            dfs(i);
-        }
-        if (result != Integer.MAX_VALUE)
-            System.out.println(result);
-        else
-            System.out.println("-1");
-    }
-
-    public static void dfs(int start){
-        if(selected_virus.size() == M){
-            int time = solve();
-//            System.out.println(time);
-            if(checkmap())
-                result = Math.min(time, result);
-            return;
-        }
-
-        for(int i = start; i< virus.size(); i++){
-            if(!visited[i]){
-                visited[i] = true;
-                int v = virus.get(i);
-                selected_virus.add(v);
-                dfs(start);
-                if (!selected_virus.isEmpty())
-                    selected_virus.remove(selected_virus.size()-1);
-            }
-        }
-    }
-
-    public static int solve(){
-        Deque<Integer> q = new ArrayDeque<>(selected_virus);
-        trace = new boolean[51][51];
-
-        int[][] tmp = new int[51][51];
-        copy_map(tmp, time_map);
-
-        while(!q.isEmpty()){
-            int now = q.poll();
-            int x = now % 10;
-            int y = now / 10;
-            trace[y][x] = true;
-
-            for(int i = 0; i<4; i++){
-                int next_x = x + dx[i];
-                int next_y = y + dy[i];
-
-                if(1<= next_x && next_x <= N && 1 <= next_y && next_y <= N){
-                    if(!trace[next_y][next_x] && time_map[next_y][next_x] == 0){
-                        trace[next_y][next_x] = true;
-                        time_map[next_y][next_x] = time_map[y][x] + 1;
-                        q.offer(next_x + next_y * 10);
-                    }
+        // Îßµ ÏÑ§Ï†ï
+        boolean hasNoBlank = true;
+        for (int r = 0; r < N; r++) {
+            st = new StringTokenizer(br.readLine().trim());
+            for (int c = 0; c < N; c++) {
+                map[r][c] = Integer.parseInt(st.nextToken());
+                // Î∞îÏù¥Îü¨Ïä§ ÏúÑÏπò Ï†ÄÏû•
+                if (map[r][c] == 2) {
+                    virus.add(new Pos(r, c));
+                } else if(map[r][c] == 0){
+                    hasNoBlank = false;
                 }
             }
         }
-
-        int val = 0;
-        for(int i = 1; i<N+1;i++){
-            for(int j = 1; j<N+1; j++){
-                val = Math.max(val, time_map[i][j]);
-            }
+        if(hasNoBlank){
+            System.out.println(0);
+            return;
         }
 
-        // ¿Ã¿¸ ªÛ≈¬∑Œ µ«µπ∏Æ±‚ ±◊∏Æ∞Ì ∞…∏∞ Ω√∞£ π›»Ø
-        copy_map(time_map, tmp);
-
-        return val;
+        selected = new boolean[virus.size()];
+        perm(0, 0);
+        System.out.println(minTime == Integer.MAX_VALUE ? -1 : minTime -1);
     }
 
-    public static boolean checkmap(){
-        for(int i = 1; i<N+1; i++){
-            for(int j =1; j<N+1;j++){
-                if(!trace[i][j] && time_map[i][j] != -1)
-                    return false;
-            }
+    public static void perm(int idx, int cnt) {
+        if (idx >= virus.size() || cnt >= M) {
+            if (cnt == M)   bfs();
+            return;
         }
-        return true;
+        selected[idx] = true;
+        perm(idx + 1, cnt + 1);
+        selected[idx] = false;
+        perm(idx + 1, cnt);
     }
 
-    // arr1¿ª arr2∑Œ ∏∏µÈ±‚
-    public static void copy_map(int[][] arr1, int[][] arr2){
-        for(int i = 1; i<N+1; i++){
-            for(int j =1; j<N+1; j++){
-                arr1[i][j] = arr2[i][j];
+    public static void bfs() {
+        tmap = new int[N][N];
+        for (int i = 0; i < selected.length; i++) {
+            Pos p = virus.get(i);
+            if (selected[i]) {
+                q.addLast(p);
+                tmap[p.r][p.c] = 1;
             }
         }
+        while (!q.isEmpty()) {
+            Pos p = q.pollFirst();
+            for (int d = 0; d < 4; d++) {
+                int nr = p.r + dr[d];
+                int nc = p.c + dc[d];
+                if (nr < 0 || nr >= N || nc < 0 || nc >= N) continue;
+                if (tmap[nr][nc] != 0 || map[nr][nc] == 1)  continue;
+                tmap[nr][nc] = tmap[p.r][p.c] + 1;
+                q.addLast(new Pos(nr, nc));
+            }
+        }
+        int maxTime = 0;
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N; j++) {
+                if (map[i][j] == 1 || map[i][j] == 2)   continue;
+                if (tmap[i][j] == 0)    return;
+                maxTime = Math.max(maxTime, tmap[i][j]);
+            }
+        }
+        minTime = Math.min(minTime, maxTime);
     }
 }
