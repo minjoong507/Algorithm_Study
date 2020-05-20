@@ -54,16 +54,15 @@ class Q_17141 {
         else
             dfs(0,0);
 
-        if (result != Integer.MAX_VALUE)
-            System.out.println(result);
-        else
-            System.out.println("-1");
+        if (result == Integer.MAX_VALUE) System.out.println("-1");
+        else System.out.println(result);
     }
 
     public static void dfs(int depth, int start){
         if(depth == M){
             int[][] tmp = new int[N][N];
             copy_map(tmp, arr);
+
             solve();
             copy_map(arr, tmp);
             return;
@@ -80,42 +79,48 @@ class Q_17141 {
 
     public static void solve(){
         Deque<point> q = new ArrayDeque<>();
+        boolean[][] trace = new boolean[N][N];
+
         for(int i = 0; i<virus.size(); i++){
-            if(visited[i]) q.offer(virus.get(i));
+            if(visited[i]) {
+                q.offer(virus.get(i));
+                arr[virus.get(i).y][virus.get(i).x] = -2;
+                trace[virus.get(i).y][virus.get(i).x] = true;
+            }
         }
 
-        boolean[][] trace = new boolean[N][N];
+        int time = 1;
         while(!q.isEmpty()){
-            point now = q.poll();
-            trace[now.y][now.x] = true;
+            int size = q.size();
+            for(int k = 0; k< size; k++){
+                point now = q.poll();
 
-            for(int i = 0; i<4; i++){
-                int next_x = now.x + dx[i];
-                int next_y = now.y + dy[i];
+                for(int i = 0; i<4; i++){
+                    int next_x = now.x + dx[i];
+                    int next_y = now.y + dy[i];
 
-                if(0 <= next_x && next_x < N && 0 <= next_y && next_y < N && !trace[next_y][next_x] && arr[next_y][next_x] != -1){
-                    trace[next_y][next_x] = true;
-                    arr[next_y][next_x] = arr[now.y][now.x] + 1;
-                    q.offer(new point(next_x, next_y));
+                    if(0 <= next_x && next_x < N && 0 <= next_y && next_y < N && !trace[next_y][next_x] && arr[next_y][next_x] != -1){
+                        trace[next_y][next_x] = true;
+                        arr[next_y][next_x] = time;
+                        q.offer(new point(next_x, next_y));
+                    }
                 }
             }
+            time ++;
         }
 
         int val = 0;
-        boolean Check_all = true;
-
+        boolean isvalid = true;
         for(int i = 0; i<N;i++){
             for(int j = 0; j<N; j++){
-                if (!trace[i][j] && arr[i][j] != -1){
-                    Check_all = false;
+                if (arr[i][j] == 0){
+                    isvalid = false;
                     break;
                 }
-                else
-                    val = Math.max(val, arr[i][j]);
+                val = Math.max(val, arr[i][j]);
             }
         }
-
-        if (Check_all)
+        if (isvalid)
             result = Math.min(val, result);
         else
             return;
