@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 public class Q_1707 {
-    static ArrayList<ArrayList<Integer>> tree = new ArrayList<>();
+    static ArrayList<ArrayList<Integer>> tree;
     static int K, V, E;
     static int[] color;
     static Scanner sc = new Scanner(System.in);
@@ -13,6 +13,7 @@ public class Q_1707 {
         for(int i = 0; i < K; i++){
             V = sc.nextInt();
             E = sc.nextInt();
+            tree = new ArrayList<>();
 
             for(int j = 0; j < V + 1; j++)
                 tree.add(new ArrayList<>());
@@ -65,5 +66,4 @@ public class Q_1707 {
         }
 
     }
-
 }
