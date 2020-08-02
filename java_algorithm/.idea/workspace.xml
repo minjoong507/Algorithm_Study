@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="eedf5378-61b7-4cc5-b4f4-175d9f9b2bd5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Q_15989.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Q_15989.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_1107.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/intellij/Q_1107.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_17141.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/intellij/Q_17141.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,30 +38,23 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RunManager" selected="Application.Q_15989">
-    <configuration name="Q_1107" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Q_1107" />
+  <component name="RunManager" selected="Application.Q_13549">
+    <configuration name="Q_13549" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Q_13549" />
       <module name="intellij" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Q_11727" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Q_11727" />
+    <configuration name="Q_15558" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Q_15558" />
       <module name="intellij" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Q_12101" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Q_12101" />
-      <module name="intellij" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Q_15989" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Q_15989" />
+    <configuration name="Q_1707" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Q_1707" />
       <module name="intellij" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -73,13 +67,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Q_4991" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Q_4991" />
+      <module name="intellij" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Q_15989" />
-        <item itemvalue="Application.Q_12101" />
-        <item itemvalue="Application.Q_11727" />
-        <item itemvalue="Application.Q_1107" />
+        <item itemvalue="Application.Q_13549" />
+        <item itemvalue="Application.Q_1707" />
+        <item itemvalue="Application.Q_15558" />
         <item itemvalue="Application.Q_17141" />
+        <item itemvalue="Application.Q_4991" />
       </list>
     </recent_temporary>
   </component>
@@ -132,6 +133,9 @@
       <workItem from="1595401875254" duration="2424000" />
       <workItem from="1595407122787" duration="1118000" />
       <workItem from="1595477601791" duration="378000" />
+      <workItem from="1596333638819" duration="1904000" />
+      <workItem from="1596351071255" duration="9417000" />
+      <workItem from="1596384047422" duration="2400000" />
     </task>
     <servers />
   </component>
@@ -148,70 +152,62 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1589386425975" />
-    <state width="1493" height="150" key="GridCell.Tab.0.bottom" timestamp="1595407778773">
+    <state width="724" height="103" key="GridCell.Tab.0.bottom" timestamp="1596386406581">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="150" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1595407778773" />
     <state width="1493" height="266" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1589983877414" />
-    <state width="726" height="214" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595404302582" />
-    <state width="1493" height="150" key="GridCell.Tab.0.center" timestamp="1595407778772">
+    <state width="724" height="103" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596386406581" />
+    <state width="724" height="103" key="GridCell.Tab.0.center" timestamp="1596386406580">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="150" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1595407778772" />
     <state width="1493" height="266" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1589983877414" />
-    <state width="726" height="214" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1595404302582" />
-    <state width="1493" height="150" key="GridCell.Tab.0.left" timestamp="1595407778771">
+    <state width="724" height="103" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1596386406580" />
+    <state width="724" height="103" key="GridCell.Tab.0.left" timestamp="1596386406580">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="150" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1595407778771" />
     <state width="1493" height="266" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1589983877414" />
-    <state width="726" height="214" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1595404302582" />
-    <state width="1493" height="150" key="GridCell.Tab.0.right" timestamp="1595407778772">
+    <state width="724" height="103" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1596386406580" />
+    <state width="724" height="103" key="GridCell.Tab.0.right" timestamp="1596386406581">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="150" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1595407778772" />
     <state width="1493" height="266" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1589983877414" />
-    <state width="726" height="214" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1595404302582" />
-    <state width="725" height="258" key="GridCell.Tab.1.bottom" timestamp="1595056549677">
+    <state width="724" height="103" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1596386406581" />
+    <state width="1493" height="263" key="GridCell.Tab.1.bottom" timestamp="1596364386751">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1589970466280" />
-    <state width="725" height="258" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595056549677" />
-    <state width="725" height="258" key="GridCell.Tab.1.center" timestamp="1595056549677">
+    <state width="1493" height="263" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596364386751" />
+    <state width="1493" height="263" key="GridCell.Tab.1.center" timestamp="1596364386751">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1589970466280" />
-    <state width="725" height="258" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1595056549677" />
-    <state width="725" height="258" key="GridCell.Tab.1.left" timestamp="1595056549677">
+    <state width="1493" height="263" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1596364386751" />
+    <state width="1493" height="263" key="GridCell.Tab.1.left" timestamp="1596364386751">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1589970466280" />
-    <state width="725" height="258" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1595056549677" />
-    <state width="725" height="258" key="GridCell.Tab.1.right" timestamp="1595056549677">
+    <state width="1493" height="263" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1596364386751" />
+    <state width="1493" height="263" key="GridCell.Tab.1.right" timestamp="1596364386751">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1589970466280" />
-    <state width="725" height="258" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1595056549677" />
+    <state width="1493" height="263" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1596364386751" />
     <state x="277" y="54" key="SettingsEditor" timestamp="1588684140128">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1588684140128" />
-    <state x="581" y="298" key="com.intellij.ide.util.TipDialog" timestamp="1587206199795">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="581" y="298" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587206199795" />
     <state x="499" y="177" key="extract.method.dialog" timestamp="1588772037923">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="177" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1588772037923" />
-    <state x="823" y="8" width="657" height="807" key="find.popup" timestamp="1588777590870">
+    <state x="823" y="8" width="657" height="807" key="find.popup" timestamp="1596359537998">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="823" y="8" width="657" height="807" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1588777590870" />
-    <state x="180" y="22" key="new project wizard" timestamp="1586846072851">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="180" y="22" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1586846072851" />
+    <state x="823" y="8" width="657" height="807" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1596359537998" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1588686416121">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -228,6 +224,26 @@
           <url>file://$PROJECT_DIR$/src/Q_15989.java</url>
           <line>3</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Q_15558.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Q_1707.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Q_1707.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Q_1707.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
