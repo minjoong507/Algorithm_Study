@@ -21,14 +21,15 @@ public class Q_17471 {
             for(int j = 0; j < connect_n; j++){
                 int node = sc.nextInt();
                 arr.get(i).add(node);
-                arr.get(node).add(i);
             }
         }
 
     }
 
     public static void solve(){
-
+        for(int i = 1; i< N+1; i++){
+            
+        }
 
 
 
