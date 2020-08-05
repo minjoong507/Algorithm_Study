@@ -4,7 +4,7 @@
 
   > 백준 문제 소스코드 in python
 
-- TOBIGS/
+- [Tobigs/](https://github.com/minjoong507/Algorithm_Study/tree/master/BAEKJOON)
 
   > 투빅스 알고리즘 풀이 in python
 
