@@ -13,14 +13,14 @@ public class Q_1967 {
 
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static int N, max_L, max_R, result = Integer.MIN_VALUE;
-    static ArrayList<ArrayList<Integer>> tree = new ArrayList<>();
+    static ArrayList<ArrayList<node>> tree = new ArrayList<>();
     static int[][] weight;
 
     public static void main(String[] args) throws Exception{
         N = Integer.parseInt(br.readLine().trim());
 
         for(int i = 0; i< N+1; i++)
-            tree.add(new ArrayList<>());
+            tree.add(new ArrayList<node>());
 
         weight = new int[N+1][N+1];
 
@@ -30,52 +30,71 @@ public class Q_1967 {
             int b = Integer.parseInt(st.nextToken());
             int c = Integer.parseInt(st.nextToken());
 
-            tree.get(a).add(b);
-            weight[a][b] = c;
+            tree.get(a).add(new node(b, c));
+            tree.get(b).add(new node(a, c));
 
         }
-        solve();
+        int max_node = found_leafNode(1);
+        BFS(max_node);
     }
 
 
     public static void solve(){
-        for(int i = 1; i < N+1; i++){
-            if(tree.get(i).size() == 2) {
-                int L = tree.get(i).get(0);
-                int R = tree.get(i).get(1);
 
-                max_L = BFS(new node(L, weight[i][L]));
-                max_R = BFS(new node(R, weight[i][R]));
-
-                result = Math.max(result, max_L + max_R);
-            }
-        }
-        System.out.println(result);
     }
 
-    public static int BFS(node start){
+    public static int found_leafNode(int start) {
         Deque<node> q = new ArrayDeque<>();
-        q.add(start);
+        q.add(new node(start, 0));
+        boolean[] visited = new boolean[N + 1];
+        visited[start] = true;
         int result = 0;
+        int max_idx = 1;
 
-        while(!q.isEmpty()){
+        while (!q.isEmpty()) {
             node n = q.poll();
-            if(tree.get(n.idx).size() == 0){
-                result = Math.max(result, n.weight);
+            if (visited[n.idx]) {
+
+                if (result < n.weight) {
+                    result = n.weight;
+                    max_idx = n.idx;
+                }
+                continue;
             }
 
-            else{
-                for(int next: tree.get(n.idx)){
-                    if(tree.get(next).size() == 0)
-                        result = Math.max(result, n.weight + weight[n.idx][next]);
-
-                    else
-                        q.offer(new node(next, weight[n.idx][next] + n.weight));
+            for (node next : tree.get(n.idx)) {
+                if (!visited[next.idx]) {
+                    visited[next.idx] = true;
+                    q.offer(new node(next.idx, n.weight + next.weight));
                 }
             }
         }
 
-        return result;
+        return max_idx;
+    }
+
+
+    public static void BFS(int start) {
+        Deque<node> q = new ArrayDeque<>();
+        q.add(new node(start, 0));
+        boolean[] visited = new boolean[N + 1];
+        visited[start] = true;
+        int result = 0;
+        while (!q.isEmpty()) {
+            node n = q.poll();
+            if (visited[n.idx]) {
+                result = Math.max(result, n.weight);
+                continue;
+            }
+
+            for (node next : tree.get(n.idx)) {
+                if (!visited[next.idx]) {
+                    visited[next.idx] = true;
+                    q.offer(new node(next.idx, n.weight + next.weight));
+                }
+            }
+        }
+        System.out.println(result);
     }
 
 
