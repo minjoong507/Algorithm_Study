@@ -12,17 +12,14 @@ public class Q_1967 {
     }
 
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    static int N, max_L, max_R, result = Integer.MIN_VALUE;
+    static int N;
     static ArrayList<ArrayList<node>> tree = new ArrayList<>();
-    static int[][] weight;
 
     public static void main(String[] args) throws Exception{
         N = Integer.parseInt(br.readLine().trim());
 
         for(int i = 0; i< N+1; i++)
             tree.add(new ArrayList<node>());
-
-        weight = new int[N+1][N+1];
 
         for(int i = 0; i < N-1; i++){
             StringTokenizer st = new StringTokenizer(br.readLine().trim());
@@ -36,11 +33,7 @@ public class Q_1967 {
         }
         int max_node = found_leafNode(1);
         BFS(max_node);
-    }
-
-
-    public static void solve(){
-
+//        System.out.println(max_node);
     }
 
     public static int found_leafNode(int start) {
@@ -53,19 +46,18 @@ public class Q_1967 {
 
         while (!q.isEmpty()) {
             node n = q.poll();
-            if (visited[n.idx]) {
-
-                if (result < n.weight) {
-                    result = n.weight;
-                    max_idx = n.idx;
-                }
-                continue;
-            }
 
             for (node next : tree.get(n.idx)) {
                 if (!visited[next.idx]) {
                     visited[next.idx] = true;
                     q.offer(new node(next.idx, n.weight + next.weight));
+                }
+
+                else{
+                    if (result < n.weight) {
+                        result = n.weight;
+                        max_idx = n.idx;
+                    }
                 }
             }
         }
@@ -82,15 +74,14 @@ public class Q_1967 {
         int result = 0;
         while (!q.isEmpty()) {
             node n = q.poll();
-            if (visited[n.idx]) {
-                result = Math.max(result, n.weight);
-                continue;
-            }
 
             for (node next : tree.get(n.idx)) {
                 if (!visited[next.idx]) {
                     visited[next.idx] = true;
                     q.offer(new node(next.idx, n.weight + next.weight));
+                }
+                else{
+                    result = Math.max(result, n.weight);
                 }
             }
         }
