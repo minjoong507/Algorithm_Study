@@ -27,9 +27,9 @@ public class Q_17471 {
     }
 
     public static void solve(){
-        for(int i = 1; i< N+1; i++){
-            
-        }
+//        for(int i = 1; i< N+1; i++){
+//
+//        }
 
 
 
@@ -38,7 +38,7 @@ public class Q_17471 {
 
     // 이렇게 그룹으로 나눌 수 있는지 체크.
     public static boolean ispossiblegroup(ArrayList<Integer> group){
-
+        return false;
     }
 
     // 이렇게 그룹으로 나눴을 때 인구 차이.
