@@ -2,10 +2,123 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eedf5378-61b7-4cc5-b4f4-175d9f9b2bd5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../BAEKJOON/Q_1011.py" beforeDir="false" afterPath="$PROJECT_DIR$/../BAEKJOON/Q_1011.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_13549.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/intellij/Q_13549.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intellij/practice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/intellij/practice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Data.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Info.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/META-INF/intellij.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Pos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_1002.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_1011.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_10171.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_1018.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_1062.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_10818.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_10819.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_1085.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_10870.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_10872.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_10942.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_10950.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_10951.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_10972.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_11021.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_11022.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_11048.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_11066.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_1107.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_11437.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_11438.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_11444.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_11659.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_11660.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_11724.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_11726.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_11727.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_11729.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_12100.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_12101.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_1260.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_12851.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_13023.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_1316.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_1330.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_13458.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_13460$balls.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_13460.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_13913.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_1436.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_14500.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_14501.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_14502.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_14503.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_1463.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_14681.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_1476.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_14888.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_14890.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_1525.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_15480.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_15558.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_15649.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_15988.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_15989.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_1654.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_16637.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_16637_timeout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_1707.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_17070.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_1712.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_17136.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_17141.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_17142.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_17281.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_1759.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_1890.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_1934.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_2004.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_2178.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_2231.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_2251.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_2309.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_2407.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_2485.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_2503.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_2562.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_2579.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_2588.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_2609.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_2749.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_2753.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_2798.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_2805.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_2884.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_2941.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_2981.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_2981_timeout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_3009.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_3052.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_3053.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_3190.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_4153.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_4963.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_4991.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_5014.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_5052.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_5373.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_6588.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_6603.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_7568.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_9020.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_9095.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Q_9613.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/Solution_Q_2407.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/bottle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/channel_info.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/point.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/robot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij/subin.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Q_17471.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Q_17471.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/practice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice.java" afterDir="false" />
     </list>
@@ -41,9 +154,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RunManager" selected="Application.Q_1967">
-    <configuration name="Q_10159" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Q_10159" />
+  <component name="RunManager" selected="Application.practice">
+    <configuration name="Q_17471" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Q_17471" />
       <module name="intellij" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -79,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.practice" />
+        <item itemvalue="Application.Q_17471" />
         <item itemvalue="Application.Q_1967" />
         <item itemvalue="Application.Q_2644" />
         <item itemvalue="Application.Q_9466" />
-        <item itemvalue="Application.practice" />
-        <item itemvalue="Application.Q_10159" />
       </list>
     </recent_temporary>
   </component>
@@ -163,34 +276,34 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1589386425975">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1589386425975" />
-    <state width="725" height="170" key="GridCell.Tab.0.bottom" timestamp="1597303496125">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="196" key="GridCell.Tab.0.bottom" timestamp="1598540540309">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="150" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1595407778773" />
     <state width="1493" height="266" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1589983877414" />
     <state width="725" height="170" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597303496125" />
-    <state width="725" height="170" key="GridCell.Tab.0.center" timestamp="1597303496124">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="196" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598540540309" />
+    <state width="1877" height="196" key="GridCell.Tab.0.center" timestamp="1598540540309">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="150" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1595407778772" />
     <state width="1493" height="266" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1589983877414" />
     <state width="725" height="170" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1597303496124" />
-    <state width="725" height="170" key="GridCell.Tab.0.left" timestamp="1597303496124">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="196" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598540540309" />
+    <state width="1877" height="196" key="GridCell.Tab.0.left" timestamp="1598540540309">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="150" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1595407778771" />
     <state width="1493" height="266" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1589983877414" />
     <state width="725" height="170" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1597303496124" />
-    <state width="725" height="170" key="GridCell.Tab.0.right" timestamp="1597303496125">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="196" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598540540308" />
+    <state width="1877" height="196" key="GridCell.Tab.0.right" timestamp="1598540540309">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="150" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1595407778772" />
     <state width="1493" height="266" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1589983877414" />
     <state width="725" height="170" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1597303496125" />
+    <state width="1877" height="196" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598540540309" />
     <state width="726" height="305" key="GridCell.Tab.1.bottom" timestamp="1596988680063">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -211,22 +324,10 @@
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1589970466280" />
     <state width="726" height="305" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1596988680063" />
-    <state x="277" y="54" key="SettingsEditor" timestamp="1588684140128">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="277" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1588684140128" />
-    <state x="499" y="177" key="extract.method.dialog" timestamp="1588772037923">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="499" y="177" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1588772037923" />
     <state x="823" y="8" width="657" height="807" key="find.popup" timestamp="1597303483415">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="823" y="8" width="657" height="807" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1597303483415" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1588686416121">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1588686416121" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
