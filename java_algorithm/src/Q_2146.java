@@ -21,8 +21,8 @@ public class Q_2146 {
 
     public static void main(String[] args) throws Exception{
         N = Integer.parseInt(br.readLine());
-        map = new int[N][N];
-        island = new int[N][N];
+        map = new int[N][N]; // 0, 1로 섬을 구분
+        island = new int[N][N]; // 섬의 좌표에 같은 숫자를 저장
 
         for(int i = 0; i < N; i++){
             String[] tmp = br.readLine().split(" ");
@@ -31,12 +31,11 @@ public class Q_2146 {
             }
         }
 
-
-        fill_island();
+        fill_island(); // 섬에 번호 매기기
 
         for(int i = 0; i < N; i++){
             for(int j = 0; j < N; j++){
-                if(map[i][j] == 1 && ok_to_start(new point(j, i)))
+                if(map[i][j] == 1 && ok_to_start(new point(j, i))) // 좌표내에서 다리를 이을 수 있는 섬 안의 좌표를 찾아 BFS 시작
                     BFS(new point(j, i));
             }
         }
@@ -59,7 +58,7 @@ public class Q_2146 {
 
             for(int i = 0; i < q_size; i++){
                 point now = q.poll();
-//                System.out.println(now.x + " " + now.y);
+
                 for(int j = 0; j < 4; j ++){
                     int next_x = now.x + dx[j];
                     int next_y = now.y + dy[j];
@@ -77,16 +76,9 @@ public class Q_2146 {
 
                     }
                 }
-
-
             }
             bridge++;
-
-
-
         }
-
-
     }
 
     public static void fill_island(){
@@ -98,7 +90,6 @@ public class Q_2146 {
                 }
             }
         }
-
     }
 
     public static void BFS_island(point p){
