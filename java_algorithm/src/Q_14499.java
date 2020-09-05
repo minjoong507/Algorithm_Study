@@ -6,7 +6,6 @@ public class Q_14499 {
     static int[] dice = new int[7];
     static int[] dx = {0, 1, -1, 0, 0};
     static int[] dy = {0, 0, 0, -1, 1};
-    static int[] move;
     static int[][] map;
 
     public static void main(String[] args){
@@ -41,9 +40,9 @@ public class Q_14499 {
 
     public static void move(int dir){
         int[] new_dice = new int[7];
-        for(int i = 1; i < 7; i++){
+        for(int i = 1; i < 7; i++)
             new_dice[i] = dice[i];
-        }
+
         switch (dir){
             case 1: // µ¿ÂÊ
                 if(map[y][x] == 0)
